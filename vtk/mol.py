@@ -2,6 +2,20 @@ class atom(object): # nuovo stile di classe python subclass di object
   def __init__(self, at, x, y, z):
     self.simbolo = at
     self.coordinate = (x, y, z)
+    self.raggio = 0.0
+    self.colore = (1.0, 1.0, 1.0)
+
+  def set_radius(self, r): 
+    self.raggio = r
+  
+  def get_radius(self):
+    return self.raggio
+
+  def set_color(self, r, g, b): 
+    self.colore = (r, g, b)
+  
+  def get_color(self):
+    return self.colore
   
   def set_symbol(self, at): 
     self.simbolo = at
