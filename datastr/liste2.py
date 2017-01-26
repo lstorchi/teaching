@@ -7,3 +7,6 @@ i = len(a) - 1
 print "rimuove l\'elemento ", i, " ", a.pop(i)
 a.sort()
 print a
+
+print (1 in a)
+print a.index(-6.0) 
