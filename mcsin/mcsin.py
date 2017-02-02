@@ -22,10 +22,17 @@ for i in range(0,DIM):
    x = random.uniform(xmin, xmax) 
    y = random.uniform(ymin, ymax) 
 
-   if x < math.pi :
+   #if x < math.pi :
+   #  if ((y <= math.sin(x)) and (y >= 0.0)):
+   #    rect_count = rect_count + 1 
+   #elif x > math.pi :
+   #  if ((y >= math.sin(x)) and (y <= 0.0)):
+   #      rect_count = rect_count - 1
+
+   if math.sin(x) > 0.0 :
      if ((y <= math.sin(x)) and (y >= 0.0)):
        rect_count = rect_count + 1 
-   elif x >= math.pi :
+   elif math.sin(x) < 0.0 :
      if ((y >= math.sin(x)) and (y <= 0.0)):
          rect_count = rect_count - 1
 
