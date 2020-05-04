@@ -22,7 +22,7 @@ radius = {'H':1.2, 'C':1.7}
 if (len(sys.argv)) == 2:
   filename = sys.argv[1]
 else:
-  print "usage :", sys.argv[0] , " xyzfile"
+  print("usage :", sys.argv[0] , " xyzfile")
   exit(1)
 
 filep = open(filename, "r")
@@ -47,7 +47,7 @@ for line in filep:
    z = plist[3]
 
    if atomname in radius:
-     print atomname, " has ", radius[atomname], x, y, z
+     print(atomname, " has ", radius[atomname], x, y, z)
 
      source = vtk.vtkSphereSource()
      source.SetCenter(float(x),float(y),float(z))

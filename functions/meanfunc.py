@@ -7,4 +7,4 @@ def calcola (vals):
 
 valori = [1.1, 4.0, 5.0, 9.5, 5.6]
 m = calcola(valori)
-print "valore medio: ", m  
+print("valore medio: ", m)  

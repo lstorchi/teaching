@@ -6,7 +6,7 @@ import os
 if (len(sys.argv)) == 2:
   filename = sys.argv[1]
 else:
-  print "usage :", sys.argv[0] , " smifile"
+  print("usage :", sys.argv[0] , " smifile")
   exit(1)
 
 filep = open(filename, "r")
@@ -20,16 +20,16 @@ for line in filep:
 
   line.replace(' ','')
 
-  print "Molecule number : ", i
+  print("Molecule number : ", i)
 
   mol = pybel.readstring( "smi", line)
   ringn = 1
   for ring in mol.OBMol.GetSSSR():
-    print ringn , " --> ", ring.IsAromatic(), ring.Size()
+    print(ringn , " --> ", ring.IsAromatic(), ring.Size())
     ringn = ringn + 1
     for a in mol.atoms:
       if (ring.IsMember(a.OBAtom)):
-        print "  ", a.idx
+        print("  ", a.idx)
 
   mol.make3D(forcefield='mmff94', steps=50)
 

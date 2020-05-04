@@ -247,7 +247,7 @@ def append_bond_using_file(actors, pdbfilename):
       for an in plist:
         if (an != "CONECT"):
           n = int(an) - 1
-          print n, xlist[n], ylist[n], zlist[n]
+          print(n, xlist[n], ylist[n], zlist[n])
           atoms.append(point.point(xlist[n], ylist[n], zlist[n]))
           atomsname.append(atomnamelist[n])
 
@@ -376,4 +376,4 @@ try:
 
   iren.Start()
 except Exception as e:
-  print e
+  print(e)

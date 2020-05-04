@@ -5,7 +5,7 @@ import sys
 DIM = 0
 
 if len(sys.argv) != 2:
-    print "usage: ", sys.argv[0] , " NUM "
+    print("usage: ", sys.argv[0] , " NUM ")
     exit(1)
 else:
     DIM = int(sys.argv[1])
@@ -31,4 +31,4 @@ for i in range(0,DIM):
 
 p = (xmax - xmin) * (ymax - ymin) * (float(rect_count) / float(DIM))
 
-print p
+print(p)

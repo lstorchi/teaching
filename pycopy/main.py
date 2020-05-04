@@ -30,5 +30,5 @@ a.setb(1)
 
 b = a
 
-print b.geta(), b.getb()
+print(b.geta(), b.getb())
 

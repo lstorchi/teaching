@@ -26,14 +26,14 @@ for i in range(len(A)):
     for k in range(len(B)):
       C[i][j] = C[i][j] + A[i][k]*B[k][j]
 
-print "Matrix A"
+print("Matrix A")
 for i in range(len(A)):
-  print A[i]
+  print(A[i])
 
-print "Matrix B"
+print("Matrix B")
 for i in range(len(B)):
-  print B[i]
+  print(B[i])
 
-print "Matrix C"
+print("Matrix C")
 for i in range(len(C)):
-  print C[i]
+  print(C[i])

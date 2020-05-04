@@ -2,7 +2,7 @@ import sys
 
 filename = ""
 if len(sys.argv) != 2:
-  print "usage: ", sys.argv[0], " filein" 
+  print("usage: ", sys.argv[0], " filein") 
   exit(1)
 else:
   filename = sys.argv[1] 

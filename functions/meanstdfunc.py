@@ -18,4 +18,4 @@ def calcola (vals):
 
 valori = [1.1, 4.0, 5.0, 9.5, 5.6]
 m, s = calcola(valori)
-print "valore medio: ", m , " stdev: ", s
+print("valore medio: ", m , " stdev: ", s)

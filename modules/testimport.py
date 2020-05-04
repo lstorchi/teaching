@@ -1,8 +1,8 @@
 import math
-print math.pi
+print(math.pi)
 
 from math import *
-print pi
+print(pi)
 
 from math import cos 
-print cos(pi)
+print(cos(pi))

@@ -12,5 +12,5 @@ m.add_atom(a)
 a = mol.atom("H", 3.389, 0.583, -9.366)  
 m.add_atom(a)
 
-print m
+print(m)
 

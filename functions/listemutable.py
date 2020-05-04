@@ -6,8 +6,8 @@ def assignlista (lista):
  
 lista = ["uno", "due"]
 editlista(lista)
-print lista
+print(lista)
 assignlista(lista)
-print lista
+print(lista)
 
 

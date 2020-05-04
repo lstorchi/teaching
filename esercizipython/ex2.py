@@ -5,12 +5,12 @@ a = random.randint(1, 20)
 inp = a + 1
 
 for i in range(0, numtest):
-    inp = int(input("inserisci numero: " ))
+    inp = int(eval(input("inserisci numero: " )))
     if inp < a:
-        print "il numero inserito e' troppo piccolo "
+        print("il numero inserito e' troppo piccolo ")
     elif inp > a:
-        print "il numero inserito e' troppo grande"
+        print("il numero inserito e' troppo grande")
     else:
-        print "bravo indovinato"
+        print("bravo indovinato")
         break
 

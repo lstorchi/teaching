@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 DIM = 0
 
 if len(sys.argv) != 2:
-    print "usage: ", sys.argv[0] , " NUM "
+    print("usage: ", sys.argv[0] , " NUM ")
     exit(1)
 else:
     DIM = int(sys.argv[1])
@@ -57,7 +57,7 @@ for i in range(0,DIM):
 p = 1.0 * ((math.pi - xmin) * ( float(p_rect_count) / float(DIM) ))
 n = -1.0 * ((xmax - math.pi) * ( float(n_rect_count) / float(DIM) ))
 
-print p + n 
+print(p + n) 
 
 plt.plot(xv, yv, ',')
 plt.plot(xvo, yvo, '.')

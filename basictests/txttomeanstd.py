@@ -6,7 +6,7 @@ filename = ""
 if len(sys.argv) == 2:
     filename = sys.argv[1]
 else:
-    print "usage: ", sys.argv[0], " filename.txt"
+    print("usage: ", sys.argv[0], " filename.txt")
     exit(1)
 
 values = []
@@ -22,6 +22,6 @@ for line in fp:
     if len(sline) == 1:
         values.append(float(sline[0]))
 
-print numpy.mean(values), " ", numpy.std(values) 
+print(numpy.mean(values), " ", numpy.std(values)) 
 
 fp.close()

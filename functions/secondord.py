@@ -16,20 +16,20 @@ def solv (a, b, c):
   return "NAN", "NAN"
   
 
-ai = input("insert a:") 
+ai = eval(input("insert a:")) 
 a = float(ai)
 
-bi = input("insert b:")
+bi = eval(input("insert b:"))
 b = float(bi)
 
-ci = input("insert c:")
+ci = eval(input("insert c:"))
 c = float(ci)
 
-print "a = ", a, " b = ", b, " c = ", c
+print("a = ", a, " b = ", b, " c = ", c)
 
 x1, x2 = solv (a, b, c)
 
 if (x1 == "NAN") and (x2 == "NAN"):
-  print "non ci sono soluzioni reali" 
+  print("non ci sono soluzioni reali") 
 else:
-  print "soluzioni: ", x1, x2
+  print("soluzioni: ", x1, x2)

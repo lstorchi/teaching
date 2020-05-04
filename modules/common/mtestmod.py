@@ -1,4 +1,4 @@
-print "Import del modulo di test"
+print("Import del modulo di test")
 
 scalar = 2.0
 

@@ -13,7 +13,7 @@ for l in f:
     values.append(float(valori[0]))
     values.append(float(valori[1]))
   else:
-    print "error while reading line: ", i
+    print("error while reading line: ", i)
 
 m = numpy.mean(values)
 s = numpy.std(values)

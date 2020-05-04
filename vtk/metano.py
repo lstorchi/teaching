@@ -27,7 +27,7 @@ a.set_radius(1.2)
 a.set_color(1.0, 1.0, 1.0)
 m.add_atom(a)
 
-print m
+print(m)
 
 actors = []
 

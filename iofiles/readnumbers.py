@@ -46,11 +46,11 @@ for l in f:
     values.append(float(valori[0]))
     values.append(float(valori[1]))
   else:
-    print "error while reading line: ", i
+    print("error while reading line: ", i)
 
 m, s = mean_stdev_welford (values)
-print "media: ", m, " ", numpy.mean(values)
-print "stdev: ", s, " ", numpy.std(values) # diviso n = len(values)
+print("media: ", m, " ", numpy.mean(values))
+print("stdev: ", s, " ", numpy.std(values)) # diviso n = len(values)
 
 # classico con rischio di overflow 
 if len(values) >= 1:
@@ -66,8 +66,8 @@ if len(values) >= 1:
   s = s/len(values)
   s = math.sqrt(s)
 
-  print "media: ", m
-  print "stdev: ", s
+  print("media: ", m)
+  print("stdev: ", s)
 
 f.close()
 

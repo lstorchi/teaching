@@ -51,7 +51,7 @@ class Population:
 
     def toStdout(self):
         for i in range(self._popSize):
-            print self._individuals[i].get_genes()
+            print(self._individuals[i].get_genes())
 
     def get_fittestval (self):
         return self._fittest
@@ -72,7 +72,7 @@ class Population:
     # Get the fittest individual
     def getFittest(self):
         
-        maxFit = - sys.maxint - 1
+        maxFit = - sys.maxsize - 1
         maxFitIndex = 0
         for i in range(self._popSize):
             if (maxFit <= self._individuals[i].get_fitness()):
@@ -100,7 +100,7 @@ class Population:
 
     #Get index of least fittest individual
     def getLeastFittestIndex(self):
-        minFitVal = sys.maxint
+        minFitVal = sys.maxsize
         minFitIndex = 0;
         
         for i in range(len(self._individuals)):

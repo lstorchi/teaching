@@ -4,5 +4,5 @@ def editstring (valin):
 
 val = "input"
 val = editstring (val)
-print "dopo la call: ", val
+print("dopo la call: ", val)
 
