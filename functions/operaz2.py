@@ -7,7 +7,7 @@ def moltiplico(a, b):
 def sommo (a, b):
     return a + b
 
-def sottraggo():
+def sottraggo(a, b):
     return a - b
 
 # un semplice dizionario
