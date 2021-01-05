@@ -7,7 +7,7 @@ filename = ""
 if len(sys.argv) == 2:
     filename = sys.argv[1]
 else:
-    print("usage: ", sys.argv[0], " filename.txt")
+    print("usage: ", sys.argv[0], " filename.xlsx")
     exit(1)
 
 df = pandas.read_excel(filename)

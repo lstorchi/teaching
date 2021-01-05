@@ -63,8 +63,8 @@ plt.plot(xv, yv, ',')
 plt.plot(xvo, yvo, '.')
 x = numpy.linspace(2.0, 5.0, 1000) 
 f = numpy.sin(x)
-#print x
-#print f
+#print (x)
+#print (f)
 plt.plot(x, f, 'red', linestyle='--', linewidth=2, label='$sin(x)$')
 legend = plt.legend(loc='upper right', shadow=True, fontsize='small')
 
