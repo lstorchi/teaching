@@ -17,7 +17,7 @@ for i in range(0,DIM):
    x = random.uniform(0.0, 1.0) 
    y = random.uniform(0.0, 1.0) 
 
-   if ((math.pow(x, 2.0) + math.pow(y, 2.0)) < 1.0): 
+   if (math.sqrt((math.pow(x, 2.0) + math.pow(y, 2.0))) < 1.0): 
      circle_count = circle_count + 1 
 
 pi = float(circle_count) / float(DIM) 
