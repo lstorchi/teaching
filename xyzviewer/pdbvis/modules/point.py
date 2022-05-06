@@ -85,7 +85,11 @@ class point:
     return point(self.x*other, self.y*other, \
         self.z*other)
 
-  def __div__(self, other):
+  def __truediv___ (self, other):
+    return point(self.x/other, self.y/other, \
+        self.z/other)
+
+  def __floordiv___ (self, other):
     return point(self.x/other, self.y/other, \
         self.z/other)
 

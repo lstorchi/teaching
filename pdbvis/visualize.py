@@ -247,7 +247,7 @@ def append_bond_using_file(actors, pdbfilename):
       for an in plist:
         if (an != "CONECT"):
           n = int(an) - 1
-          print(n, xlist[n], ylist[n], zlist[n])
+          print((n, xlist[n], ylist[n], zlist[n]))
           atoms.append(point.point(xlist[n], ylist[n], zlist[n]))
           atomsname.append(atomnamelist[n])
 
@@ -264,8 +264,9 @@ def append_bond_using_file(actors, pdbfilename):
         direction = direction * (1.0 / length)
         # get rotation axis
         rot_axis = direction + y_dir
-        rot_axis = rot_axis / 2.0
-        rot_axis = rot_axis / point.norm(rot_axis)
+        rot_axis = point.point(rot_axis.get_x() / 2.0, rot_axis.get_y() / 2.0, rot_axis.get_z() / 2.0)
+        n = point.norm(rot_axis)
+        rot_axis = point.point(rot_axis.get_x() / n, rot_axis.get_y() / n, rot_axis.get_z() / n)
       
         bondActor_from = vtk.vtkLODActor()
         bondActor_from.SetMapper( bondMapper )
